@@ -68,13 +68,15 @@
         </div>
 
         <!-- Grey section: part II -->
-        <div class="hide-me">
-          <div class="row s2-part2">
+        <div class="row s2-part2">
+          <div class="hide-me">
             <div class="col-sm">
               <h2>Manage your hospital stay. Just one tap away.</h2>
               <p class="detail-text">You have different concerns when you are in hospital. Use the integrated hospital mode to make an unpleasant time suck less.</p><!--Less inconvenient?-->
             </div>
-            <div class="col-sm">
+          </div>
+          <div class="hide-me">
+            <div class="col-sm">  
               <div class="d-flex justify-content-center align-items-center">
                 <!-- DUDE2 -->
                 <img src="img/data.svg" alt="Dashboard for the user" style="height:256px;">
@@ -84,14 +86,16 @@
         </div>
 
         <!-- Grey section: part III -->
-        <div class="hide-me">
-          <div class="row s2-part2">
+        <div class="row s2-part2">
+          <div class="hide-me">
             <div class="col-sm">
               <div class="d-flex justify-content-center align-items-center">
                 <!-- DUDE2 -->
                 <img src="img/services.svg" alt="Services the user can use" style="height:256px;">
               </div>
             </div>
+          </div>
+          <div class="hide-me">
             <div class="col-sm">
               <h2>Simplicity in hospital. And beyond.</h2>
               <p class="detail-text">Have Livia remember the details of your hospital stays. In case you need the information when you are safe and sound again.</p>
@@ -107,42 +111,42 @@
         <div class="d-flex justify-content-center s2-part2">
           <h2>What our users say</h2>
         </div>
+      </div>
 
-        <div class="row" style="margin-top:2rem">
-          <!-- Mary -->
-          <div class="col-sm testimonialContainer">
-            <div class="column testimonialImageContainer">
-              <div class="col-sm d-flex justify-content-center">
-                <img src="img/testimonialPlaceholder.svg" alt="User Mary" class="testimonialImg">
-              </div>
-              <div class="col-sm">
-                <p>&ldquo;Since I am using Livia I am able to manage the overwhelming information I receive during my hospital stay all in one place.&ldquo;</p>
-                <p class="d-flex justify-content-end">-Mary</p>
-              </div>
+      <div class="row" style="margin-top:2rem">
+        <!-- Mary -->
+        <div class="col-sm testimonialContainer hide-me">
+          <div class="column testimonialImageContainer">
+            <div class="col-sm d-flex justify-content-center">
+              <img src="img/testimonialPlaceholder.svg" alt="User Mary" class="testimonialImg">
+            </div>
+            <div class="col-sm">
+              <p>&ldquo;Since I am using Livia I am able to manage the overwhelming information I receive during my hospital stay all in one place.&ldquo;</p>
+              <p class="d-flex justify-content-end">-Mary</p>
             </div>
           </div>
-          <!-- Ben -->
-          <div class="col-sm testimonialContainer">
-            <div class="column testimonialImageContainer">
-              <div class="col-sm d-flex justify-content-center">
-                <img src="img/ben.svg" alt="User Ben" class="testimonialImg">
-              </div>
-              <div class="col-sm">
-                <p>&ldquo;It is not always easy to think of every appointment, but I like to keep my health appointments separated. Livia supports me with scheduling in my daily life.&ldquo;</p>
-                <p class="d-flex justify-content-end">-Ben</p>
-              </div>
+        </div>
+        <!-- Ben -->
+        <div class="col-sm testimonialContainer hide-me">
+          <div class="column testimonialImageContainer">
+            <div class="col-sm d-flex justify-content-center">
+              <img src="img/ben.svg" alt="User Ben" class="testimonialImg">
+            </div>
+            <div class="col-sm">
+              <p>&ldquo;It is not always easy to think of every appointment, but I like to keep my health appointments separated. Livia supports me with scheduling in my daily life.&ldquo;</p>
+              <p class="d-flex justify-content-end">-Ben</p>
             </div>
           </div>
-          <!-- Andrea -->
-          <div class="col-sm testimonialContainer">
-            <div class="column testimonialImageContainer">
-              <div class="col-sm d-flex justify-content-center">
-                <img src="img/andrea.svg" alt="User Andrea" class="testimonialImg">
-              </div>
-              <div class="col-sm">
-                <p>&ldquo;Having a child at the hospital isn't nice. Livia makes me more confident because I'm always prepared for doctor vists and have the information that matters available.&ldquo;</p>
-                <p class="d-flex justify-content-end">-Andrea</p>
-              </div>
+        </div>
+        <!-- Andrea -->
+        <div class="col-sm testimonialContainer hide-me">
+          <div class="column testimonialImageContainer">
+            <div class="col-sm d-flex justify-content-center">
+              <img src="img/andrea.svg" alt="User Andrea" class="testimonialImg">
+            </div>
+            <div class="col-sm">
+              <p>&ldquo;Having a child at the hospital isn't nice. Livia makes me more confident because I'm always prepared for doctor vists and have the information that matters available.&ldquo;</p>
+              <p class="d-flex justify-content-end">-Andrea</p>
             </div>
           </div>
         </div>
@@ -220,7 +224,7 @@
             var bottom_of_window = $(window).scrollTop() + $(window).height();
      
             // If the object is completely visible in the window, fade it in
-            if( bottom_of_window > bottom_of_object ){           
+            if( bottom_of_window > (bottom_of_object*.95)){           
               //console.log('fadein', this)
               $(this).animate({'opacity':'1'},1000);              
             }     
