@@ -1,0 +1,222 @@
+/*
+COLOR CODES
+=============
+*/
+:root {
+  /*button colors*/
+  --base-red: #FC5C5C;/*OLD: #ea5456;*/
+  --base-red-hover: #FC5C5CB3;
+  --base-green: #44B64F; /*OLD: #c8e3c8;*/
+  --base-green-hover: #44B64FB3;
+  /*footer color*/
+  --base-grey: #505050;
+  /*typography color*/
+  --text-h1: #333333;
+  --text-h3: var(--base-red);
+  --text-h4: #888888;
+  --text-h1: var(--text-h1);
+  --text-footer: #dddddd;
+  --text-footer-a: var(--text-footer);
+  /*page color*/
+  --base-background-section2: #eeeeee;
+}
+
+ 
+
+/*================================ */
+/*================================ */
+/*================================ */
+
+/*
+GENERAL STYLES
+=============
+ */
+body {
+  background-color: white;
+  margin-top: 1rem;
+}
+button {
+  font-family: "Nunito Sans", sans-serif;
+}
+footer {
+  background-color: var(--base-grey);
+  color: #fff;
+  min-height: 4rem;
+}
+
+.btn-red {
+  color: #fff;
+  background-color: var(--base-red);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.btn-red:active:focus {
+  color: #fff;
+  background-color: var(--base-red);
+}
+.btn-red:active:focus {
+  color: #fff;
+  background-color: var(--base-red);
+}
+.btn-red:hover {
+  color: #fff;
+  background-color: var(--base-red-hover);
+}
+.btn-green {
+  color: #fff;
+  background-color: var(--base-green);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.btn-green:hover {
+  color: #fff;
+  background-color: var(--base-green-hover);
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border-color: #fff;
+  padding: 8px;
+  height: 200px;
+}
+
+/*
+TYPOGRAPHY
+=============
+ */
+h1 {
+  color: var(--text-h1);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+}
+h2 {
+  color: var(--text-h1);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+h3 {
+  color: var(--text-h3);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: "Nunit Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--text-h4);
+}
+
+p {
+  color: var(--base-p);
+  font-size: 120%;
+  font-family: "Nunito Sans", sans-serif;
+}
+a {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+
+  color: var(--text-h3);
+}
+
+.detail-text {
+  padding-right: 2rem;
+  margin-top: 1rem;
+}
+.footer-text {
+  color: var(--text-footer);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+}
+.footer-text:hover {
+  color: var(--text-footer);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+}
+.footer-text a{
+  color: var(--text-footer-a);
+}
+.status-above {
+  color: var(--base-red) !important;
+}
+.search-text {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+
+  color: #c6c6c6;
+  margin-left: 16px;
+}
+.user-name {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 18px;
+
+  color: #333333;
+}
+
+/*
+HELPERS
+=============
+ */
+
+/*
+LANDING PAGE
+=============
+ */
+#header {
+  margin-bottom: 4rem;
+ }
+#section1 {
+  margin-top: 2rem;
+}
+#section1-button {
+  margin: 1rem 0 0 0;
+  border-radius: 50rem;
+}
+#section2 {
+  background-color: var(--base-background-section2);
+}
+.s1-dude-icon {
+  width: 128px;
+  margin-right: 2em;
+}
+.s1-smartphone-icon {
+  width: 88px;
+}
+.s2-part1 {
+  margin-top: 6rem;
+  padding-top: 3rem;
+}
+.s2-part2 {
+  margin-top: 4rem;
+}
+.s4-action-btn {
+  margin: 2rem 0 4rem 0;
+}
+.testimonialContainer {
+  background-color: #fbfbfb;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  margin: 1rem 2rem 1rem 2rem;
+}
+.testimonialImageContainer {
+  margin-top: 2rem;
+  padding: 0 .5rem 0 1rem;
+}
+.testimonialImg {
+  height: 96px;
+  margin-bottom: 1rem;
+}
